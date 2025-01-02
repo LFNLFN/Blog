@@ -47,4 +47,7 @@ MongoConnect()
 const article = require('./routes/article')
 app.use(article.routes(), article.allowedMethods())
 
+const token = require('./routes/token')
+app.use(token.routes(), token.allowedMethods())
+
 module.exports = app
